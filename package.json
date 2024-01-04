@@ -1,0 +1,22 @@
+{
+  "name": "themovieapp",
+  "version": "1.0.0",
+  "description": "An execise with The Move DataBase",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlePhenix/The-movie-appy.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "AlePoenix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlePhenix/The-movie-appy/issues"
+  },
+  "homepage": "https://github.com/AlePhenix/The-movie-appy#readme"
+}
