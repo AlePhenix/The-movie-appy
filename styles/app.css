@@ -1,3 +1,261 @@
+/* varoables */
+:root{
+    --purpleMain: #C459EA;
+    --purpleSecondary: #C459EA;
+    --gray: #848484;
+    --wihte: #F9F9F9;
+    --background: #282828;
+    --background-opacity:rgba(40, 40, 40, 0.6);
+    --background-linearGradient: linear-gradient(0deg, rgba(40,40,40,1) 35%, rgba(40,40,40,0.8043811274509804) 55%, rgba(40,40,40,0.4) 100%);
+}
+
+/* Global Styles */
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--wihte);
+    font-family: 'Inter', monospace;
+}
 body{
-    background-color: aqua;
+    background-color: var(--background);
+}
+.h2 {
+    color: var(--wihte);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px 0;
+}
+.secondaryText {
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: 200;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 20px 30px;
+}
+.ManetLogo{
+    width: 30px;
+    height: 30px;
+    stroke-width: 5px;
+    margin-right: 15px;
+}
+.h1 {
+    display: inline-block;
+    font-family: 'Knewave', system-ui;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--purpleMain);
+}
+.searchIcon{
+    box-sizing: content-box;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.searchIcon:hover{
+    background-color: var(--gray);
+}
+
+
+/* Sections */
+
+
+.newsSection {
+    width: 100%;
+}
+.news-Section {
+    padding: 0 30px;
+}
+.newMovieModel{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    background-image: url(../IMGs/Batman.jpg);
+    background-position-y:  50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgroundOpacity {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: var(--background-opacity);
+}
+.movieTitle{
+    color: var(--wihte);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* Scroll section movies */
+
+.selectSection {
+    width: 100%;
+    height: 160px;
+}
+.movies-Container{
+    width: 100%;
+    overflow-x: auto; 
+    white-space: nowrap;
+    display: flex;
+    gap: 10px;
+}
+.movie {
+    display: inline-block;
+    height: 120px;
+    white-space: nowrap;
+}
+
+
+
+/* SEARCHER */
+.seacher {
+    padding: 0 20px;
+}
+#seacherInput {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 20px;
+    color: var(--background);
+    background-color: var(--wihte);
+}
+.genresTitle {
+    margin: 20px 0;
+}
+.genresList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+}
+.genre {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 10px 0;
+    list-style: none;
+    color: var(--wihte);
+}
+.genre:hover {
+    color: var(--purpleMain);
+}
+
+/* Searched Movies */
+
+.moviesSearched {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* MOvie Information */
+
+#movieInfo {
+    width: 100%;
+    height: 100vh;
+    background: url('../IMGs/Batman.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.exitBtn_movieInfo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.linearGradient_Font {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: var(--background-linearGradient);
+    padding: 20px;
+}
+.fastInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 50%;
+}
+.movieYear{
+    display: inline-block;
+}
+.movieTime {
+    display: inline-block;
+}
+
+.starsInfo{
+    text-align: end;
+}
+
+
+
+.description{
+    text-align:justify;
+    color: var(--gray);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0;   
+}
+.playInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+.playBtn {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border: 0px;
+    border-radius: 10px ;
+    color: var(--background);
+    background-color: var(--purpleMain);
+}
+.playBtn:hover {
+    background-color: var(--purpleSecondary);
+}
+.playInfo img {
+    padding: 5px;
+    border: 2px solid var(--background);
+    border-radius: 50%;
+}
+.playInfo img:hover {
+    border: 2px solid var(--gray);
+}
+
+.similarInfo {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+.none {
+    display: none;
 }

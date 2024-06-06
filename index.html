@@ -3,10 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Knewave&display=swap" rel="stylesheet">
     <title>Manet</title>
     <link rel="stylesheet" href="./styles/app.css">
 </head>
 <body>
+    <header id="header" class="header">
+        <div class="logoContainer">
+            <img class="ManetLogo" src="./svg/Logo_Manet.svg" alt="Manet logo">
+            <h1 class="h1">Manet</h1>
+        </div>
+        <nav>
+            <input type="text" class="none">
+            <img id="searchIcon" onclick="openSearch()" class="searchIcon" src="./svg/search.svg" alt="search icon">
+        </nav>
+    </header>
+    <section id="newsSection" class="news-Section">
+        <h2 class="h2">News</h2>
+        <div class="newMovieModel">
+            <div class="backgroundOpacity">
+                <p class="movieTitle">Batman</p>
+                <img src="./svg/Stars.svg" alt="Stars of the movie">
+            </div>
+        </div>
+        <article class="forYou-Section selectSection">
+            <h2 class="h2">For You</h2>
+            <div class="movies-Container">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+            </div>
+        </article>
+        <article class="family-Section selectSection">
+            <h2 class="h2">Family</h2>
+            <div class="movies-Container">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+            </div>
+        </article>
+        <article class="chill-Section selectSection">
+            <h2 class="h2">Chill</h2>
+            <div class="movies-Container">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+            </div>
+        </article>
+    </section>
+    <section id="seacherSection" class="seacher none">
+        <input type="text" id="seacherInput">
+        <article id="search" class="search ">
+            <h2 class="genresTitle h2">Genres</h2>
+            <ul class="genresList">
+                <li class="genre">Action</li>
+                <li class="genre">Drama</li>
+                <li class="genre">History</li>
+                <li class="genre">Famlily</li>
+                <li class="genre">Romance</li>
+                <li class="genre">Comedy</li>
+                <li class="genre">Horror</li>
+                <li class="genre">Science Fiction</li>
+            </ul>
+        </article>
+        <article id="searched" class="searched none">
+            <div class="moviesSearched">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+            </div>
+        </article>
+    </section>
+    <section id="movieInfo" class="none">
+        <img id="exitBtn_movieInfo" class="exitBtn_movieInfo" onclick="InfoSection()" src="./svg/x.svg" alt="exit button">
+        <span class="linearGradient_Font">
+            <article class="fastInfo">
+                <article class="textInfo">
+                    <h2 class="movieTitle">Batman</h2>
+                    <p class="secondaryText movieYear">2014</p>
+                    <p class="secondaryText movieTime">1h 32min</p>
+                </article>
+                <article class="starsInfo">
+                    <img src="./svg/Stars.svg" alt="Stars of the movie">
+                    <p class="secondaryText usersStars">Fron 342 users</p>
+                </article>
+            </article>
+            <article class="playInfo">
+                <button class="playBtn">Play</button>
+                <img src="./svg/more-icon.svg" alt="more icon">
+            </article>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius quam nam, id recusandae quasi qui. Atque, asperiores quae exercitationem, facere reiciendis cupiditate consectetur totam commodi officiis in sed nobis magni!</p>
+            <article class="similarInfo">
+                <h2 class="h2">Similar</h2>
+                <div class="movies-Container">
+                    <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                    <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                    <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                    <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                    <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                    <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                    <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                    <img src="./IMGs/Batman.jpg" alt="img of the movie" class="movie">
+                </div>
+            </article>
+        </span>
+    </section>
     <script src="src/main.js"></script>
 </body>
 </html>
